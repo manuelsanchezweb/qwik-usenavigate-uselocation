@@ -1,0 +1,141 @@
+/**
+ * WHAT IS THIS FILE?
+ *
+ * Globally applied styles. No matter which components are in the page or matching route,
+ * the styles in here will be applied to the Document, without any sort of CSS scoping.
+ *
+ */
+
+:root {
+  --qwik-dark-blue: #006ce9;
+  --qwik-light-blue: #18b6f6;
+  --qwik-light-purple: #ac7ff4;
+  --qwik-dark-purple: #713fc2;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  padding: 20px 20px 40px 20px;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 130px -50px var(--qwik-light-purple);
+  overflow: hidden;
+}
+
+h1,
+h2 {
+  margin: 0 0 5px 0;
+}
+
+.lightning {
+  filter: hue-rotate(180deg);
+}
+
+section {
+  padding: 20px;
+  border-bottom: 10px solid var(--qwik-dark-blue);
+}
+
+p,
+li {
+  padding: 8px 0;
+  line-height: 1.5rem;
+}
+
+li::marker {
+  color: var(--qwik-light-blue);
+}
+
+a,
+a:visited {
+  color: var(--qwik-dark-blue);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+table.commands {
+  margin: 0 0 30px 0;
+}
+
+.commands td {
+  padding: 5px;
+}
+
+.commands td:first-child {
+  white-space: nowrap;
+  padding-right: 20px;
+}
+
+code {
+  font-family: Menlo, Monaco, Courier New, monospace;
+  font-size: 0.9em;
+  background-color: rgb(224, 224, 224);
+  padding: 2px 4px;
+  border-radius: 3px;
+  border-bottom: 2px solid #bfbfbf;
+}
+
+.my-2 {
+  margin: 1rem 0;
+}
+
+.my-4 {
+  margin: 2rem 0;
+  padding: 0 20px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.grid-combo {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-combo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.gap-2 {
+  gap: 1rem;
+}
+
+.gap-4 {
+  gap: 2rem;
+}
+
+/* // Estilo del button y de .btn */
+button,
+.btn {
+  border: 1px solid black;
+  outline: none;
+  text-transform: uppercase;
+  background-color: var(--qwik-light-blue);
+  color: white !important;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 0.8rem;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus,
+.btn:hover,
+.btn:focus {
+  background-color: var(--qwik-dark-blue);
+}
