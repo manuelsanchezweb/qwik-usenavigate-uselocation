@@ -1,3 +1,5 @@
 # Qwik City App ⚡️
 
-Deploy
+## Deploy
+
+https://qwik-usenavigate-uselocation.netlify.app/
