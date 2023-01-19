@@ -1,9 +1,8 @@
 import { component$, useClientEffect$ } from "@builder.io/qwik";
-import { useLocation, useNavigate } from "@builder.io/qwik-city";
+import { useNavigate } from "@builder.io/qwik-city";
 
 export default component$(() => {
   const nav = useNavigate();
-  const loc = useLocation();
   console.log(nav);
 
   useClientEffect$(() => {
